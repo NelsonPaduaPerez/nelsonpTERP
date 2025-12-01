@@ -21,7 +21,7 @@ const uri = process.env.MONGO_CONNECTION_STRING;
 const client = new MongoClient(uri, { serverApi: ServerApiVersion.v1 });
 
 app.get("/", async (req, res) => {
-   res.send(`My Deployement`);
+   res.send(`My Deployment`);
 });
 
 app.get("/insertMovies", async (req, res) => {
